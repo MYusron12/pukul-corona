@@ -1,10 +1,12 @@
-h1 {
+h1,
+h2 {
     font-size: 60px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
 }
 
-button{
+button {
     display: block;
     margin: auto;
 }
@@ -12,6 +14,11 @@ button{
 .container {
     width: 600px;
     margin: auto;
+    cursor: url(../img/semprotan.png), auto;
+}
+
+.container:active{
+    cursor: url(../img/semprotan1.png), auto;
 }
 
 .awan {
@@ -22,7 +29,7 @@ button{
     float: left;
 }
 
-.awan::after{
+.awan::after {
     content: '';
     display: block;
     width: 200px;
@@ -33,7 +40,7 @@ button{
     bottom: -10px;
 }
 
-.corona{
+.corona {
     width: 100%;
     height: 100%;
     background: url(../img/corona.png) bottom center no-repeat;
@@ -43,8 +50,7 @@ button{
     transition: top 0.3s;
 }
 
-.awan.muncul .corona{
+.awan.muncul .corona {
     top: -30px;
 
 }
-
